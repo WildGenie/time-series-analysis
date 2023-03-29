@@ -25,8 +25,7 @@ def func(S,D,a,b,c,d,q,w):
 # to one dimension.
 def _func(M, *args):
     S,D = M.T[0], M.T[1]
-    arr = func(S, D, *args)
-    return arr
+    return func(S, D, *args)
 
 # Flatten the initial guess parameter list.
 p0 = np.random.randn(6)
